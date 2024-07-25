@@ -17,7 +17,7 @@ These builds provide a standard, `asyncio`-based MicroPython environment enhance
 - Support for TLS certificate bundles
 - For `ESP32`:
   - `coredump` - Collect crash reports remotely
-  - OTA updates for MicroPython itself
+  - OTA updates for MicroPython system firmware
 
 # Getting Started
 
@@ -43,7 +43,8 @@ Pre-configured devices:
 
 ## 2. Setup your board
 
-Use **Blynk IoT App** to add the device to your account.
+Use **Blynk IoT App** to add the device to your account
+
 1. Open Blynk App
 2. Click **Add device**
 3. Select **Find devices nearby**
@@ -53,7 +54,7 @@ Use **Blynk IoT App** to add the device to your account.
 > If you have already created your device in Blynk,
 > you can [connect your device manually using REPL](_extra/Cookbook.md#manual-device-connection)
 
-## 3. Edit the default Python app
+## 3. Edit the default MicroPython app
 
 There are many ways to program your device. We'll guide you through 2 most popular options:
 
@@ -64,9 +65,7 @@ There are many ways to program your device. We'll guide you through 2 most popul
 
 ## Further reading
 
-- [`Blynk MQTT API documentation`](https://docs.blynk.io/en/blynk.cloud-mqtt-api/device-mqtt-api)
+- [Cookbook](_extra/Cookbook.md)
 - [`asyncio` documentation](https://docs.micropython.org/en/latest/library/asyncio.html)
 - [`asyncio` tutorial](https://github.com/peterhinch/micropython-async/blob/master/v3/docs/TUTORIAL.md)
-- [`mpremote` documentation](https://docs.micropython.org/en/latest/reference/mpremote.html)
-- Alternative MQTT libraries like [mqtt_as](https://github.com/peterhinch/micropython-mqtt/tree/master/mqtt_as)
 

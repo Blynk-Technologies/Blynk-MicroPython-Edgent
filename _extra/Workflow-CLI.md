@@ -1,7 +1,7 @@
 
-## 3. Modify the default example
+# Using `mpremote`
 
-Make sure your board is connected via USB. It should **not** be opened by any serial monitor.
+Make sure your board is connected via USB. It should **not** be opened by any serial monitor or other tool.
 Run these commands on your development machine:
 
 ```sh
@@ -12,9 +12,10 @@ pip3 install --upgrade mpremote
 mpremote cp main.py :
 ```
 
-## 4. Run
+> [!NOTE]
+> If you have any issues with this, please check out the [`mpremote` documentation](https://docs.micropython.org/en/latest/reference/mpremote.html)
 
-Open MicroPython REPL:
+Then, open MicroPython REPL:
 
 ```sh
 mpremote repl
@@ -34,31 +35,6 @@ The device should get connected in a few seconds:
 Connecting to WiFi_SSID... OK: 192.168.1.123
 Connecting to MQTT broker...
 Connected to Blynk.Cloud [secure]
-```
-
-## Edit System Config
-
-You can edit `sysconfig` directly from MicroPython REPL:
-
-```py
-# Display all sysconfig
-sysconfig
-
-# Display parts of sysconfig
-sysconfig.keys()
-sysconfig['blynk']
-
-# Disable watchdog (requires a hard reset)
-sysconfig["wdt"]["enabled"] = False
-
-# Enable color logs and set log level
-sysconfig["log"].update({ "color": True, "level": "debug" })
-
-# Remove network by index (0-based)
-del sysconfig["nets"][2]
-
-# Save settings
-sysconfig.commit()
 ```
 
 # Create OTA package

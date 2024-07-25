@@ -6,7 +6,7 @@
 Connect your device to Blynk.Cloud by directly modifying the device configuration using REPL:
 
 ```py
-# Add WiFi network
+# Add your WiFi network
 sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassword" })
 
 # Setup Blynk Template and Auth Token
@@ -17,29 +17,47 @@ sysconfig["blynk"].update({
     "server":    "blynk.cloud",
 })
 
-# Save device configuration
+# Save system configuration
 sysconfig.commit()
 ```
 
 > [!NOTE]
 > When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function. Please contact Blynk for guidance.
 
-## Change logger settings
+## Edit System Config
+
+You can edit `sysconfig` directly from MicroPython REPL:
 
 ```py
+# Display complete sysconfig
+sysconfig
+
+# Display parts of sysconfig
+sysconfig.keys()
+sysconfig['blynk']
+
+# Enable color logs and set log level
 sysconfig["log"].update({ "color": True, "level": "debug" })
+
+# Add your WiFi network
+sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassword" })
+
+# Remove network by index (0-based)
+del sysconfig["nets"][2]
+
+# Save system configuration
 sysconfig.commit()
-machine.reset()
 ```
 
 ## Watchdog Timer
 
-Most of builds come with the watchdog disabled by default.
+The watchdog is typically disabled by default, as it can complicate prototyping.
+It is recommended to enable it at later stages of development:
 
 ```py
-sysconfig["wdt"]["enabled"] = True     # or False
+sysconfig["wdt"]["enabled"] = True
 sysconfig.commit()
-machine.reset()
+machine.reset()      # Chnaging this setting requires a hard reset
 ```
 
 ## Format internal FS

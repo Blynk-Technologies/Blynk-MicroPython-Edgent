@@ -48,29 +48,29 @@ Use **Blynk IoT App** to add the device to your account.
 3. Select **Find devices nearby**
 4. Select your device, follow the setup instructions
 
-If you have already created your device in Blynk, you can skip the App-based provisioning and add your device by directly modifying the device configuration using REPL:
-
-```py
-# Add WiFi network
-sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassword" })
-
-# Setup Blynk Template and Auth Token
-sysconfig["blynk"].update({
-    "tmpl_id":   "TMPxxxxxxxxxx",
-    "tmpl_name": "Device",
-    "auth":      "rn60Wx*******",
-    "server":    "blynk.cloud",
-})
-sysconfig.commit()
-```
-
 > [!NOTE]
+> If you have already created your device in Blynk, you can skip the App-based provisioning and add your device by directly modifying the device configuration using REPL:
+> ```py
+> # Add WiFi network
+> sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassword" })
+> 
+> # Setup Blynk Template and Auth Token
+> sysconfig["blynk"].update({
+>     "tmpl_id":   "TMPxxxxxxxxxx",
+>     "tmpl_name": "Device",
+>     "auth":      "rn60Wx*******",
+>     "server":    "blynk.cloud",
+> })
+> sysconfig.commit()
+> ```
 > When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function.
 
 ## 3. Edit the default firmware 
 
-- Online IDE for Web and Mobile (ViperIDE)
-- Command Line Interface () 
+There are many ways to program your device. We'll guide you through 2 most popular options:
+
+- [ViperIDE for Web and Mobile](_extra/Workflow-ViperIDE.md)
+- [CLI using mpremote](_extra/Workflow-CLI.md)
 
 ---
 

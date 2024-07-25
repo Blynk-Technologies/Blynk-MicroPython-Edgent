@@ -2,22 +2,8 @@
 # Blynk.Edgent for MicroPython
 
 Blynk offers custom MicroPython builds tailored for IoT applications.
-These builds provide a standard, MicroPython environment enhanced with various fixes, improvements, and additional features:
-
-- `blynk.inject` - BLE-assisted device claiming and provisioning
-- `blynk.air` - OTA updates using **Blynk.Console** and **Blynk.Apps**
-- `blynk.time` - Time Zone handling (including DST transitions), Sunrise/Sunset calculation
-- `blynk.repl` - Remote MicroPyhton REPL for Blynk Terminal
-- `netmgr` - Network management for `WiFi`, `Ethernet` and `Cellular`
-- `config` - System-wide configuration
-- `aiontp` - A versatile asyncio-based version of NTP client
-- `logging` - System-wide, preconfigured logging
-- `board` - A unified way to access the board peripherals
-- Factory reset function
-- Support for TLS certificate bundles
-- For `ESP32`:
-  - `coredump` - Collect crash reports remotely
-  - OTA updates for MicroPython system firmware
+These builds provide a standard, MicroPython environment enhanced with various fixes, improvements,
+and additional features like device claiming and provisioning, OTA updates, configuration store and [many more](#features).
 
 # Getting Started
 
@@ -78,6 +64,23 @@ There are many ways to program your device. We'll guide you through 2 most popul
 
 - [ViperIDE for Web and Mobile](_extra/Workflow-ViperIDE.md)
 - [CLI using mpremote](_extra/Workflow-CLI.md)
+
+# Features
+
+- `blynk.inject` - BLE-assisted device claiming and provisioning
+- `blynk.air` - OTA updates using **Blynk.Console** and **Blynk.Apps**
+- `blynk.time` - Time Zone handling (including DST transitions), Sunrise/Sunset calculation
+- `blynk.repl` - Remote MicroPyhton REPL for Blynk Terminal
+- `netmgr` - Network management for `WiFi`, `Ethernet` and `Cellular`
+- `config` - System-wide configuration
+- `aiontp` - A versatile asyncio-based version of NTP client
+- `logging` - System-wide, preconfigured logging
+- `board` - A unified way to access the board peripherals
+- Factory reset function
+- Support for TLS certificate bundles
+- For `ESP32`:
+  - `coredump` - Collect crash reports remotely
+  - OTA updates for MicroPython system firmware
 
 ---
 

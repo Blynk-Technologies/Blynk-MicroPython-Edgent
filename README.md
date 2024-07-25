@@ -39,6 +39,7 @@ Pre-configured devices:
 - `Seeed EdgeBox-ESP-100`: WiFi + Ethernet + Cellular
 - `TTGO T-Internet-COM`: WiFi + Ethernet + Cellular
 - `TTGO T-PCIE`: WiFi + Cellular
+- `TTGO T-Call SIM800C`: WiFi + Cellular/2G
 
 ## 2. Setup your board
 

@@ -34,6 +34,7 @@ sysconfig["log"].update({ "color": True, "level": "debug" })
 
 ```py
 sysconfig["wdt"]["enabled"] = False
+sysconfig.commit()
 ```
 
 ## Format internal FS
@@ -51,4 +52,10 @@ import vfs, rp2; vfs.VfsLfs2.mkfs(rp2.Flash(), progsize=256)
 
 # WM W600
 import vfs, w600; vfs.VfsLfs2.mkfs(w600.Flash(), progsize=256)
+```
+
+## Update MicroPython firmware directly from GitHub (ESP32 only)
+
+```py
+blynk.air.start_ota_update("https://micropython.org/resources/firmware/ESP32_GENERIC-SPIRAM-20240222-v1.22.2.app-bin", validate=False)
 ```

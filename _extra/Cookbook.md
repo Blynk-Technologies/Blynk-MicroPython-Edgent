@@ -38,6 +38,9 @@ sysconfig["wdt"]["enabled"] = False
 
 ## Format internal FS
 
+> [!WARNING]
+> This performs a factory reset, the internal file system will recover to it's initial state
+
 Use one of these commands depending on your actual hardware:
 ```py
 # ESP32

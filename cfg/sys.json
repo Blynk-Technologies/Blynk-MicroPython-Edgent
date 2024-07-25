@@ -6,5 +6,9 @@
   },
   "wdt": {
     "enabled": false
+  },
+  "log": {
+    "color": true,
+    "level": "debug"
   }
 }

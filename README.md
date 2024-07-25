@@ -49,21 +49,8 @@ Use **Blynk IoT App** to add the device to your account.
 4. Select your device, follow the setup instructions
 
 > [!NOTE]
-> If you have already created your device in Blynk, you can skip the App-based provisioning and add your device by directly modifying the device configuration using REPL:
-> ```py
-> # Add WiFi network
-> sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassword" })
-> 
-> # Setup Blynk Template and Auth Token
-> sysconfig["blynk"].update({
->     "tmpl_id":   "TMPxxxxxxxxxx",
->     "tmpl_name": "Device",
->     "auth":      "rn60Wx*******",
->     "server":    "blynk.cloud",
-> })
-> sysconfig.commit()
-> ```
-> When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function.
+> If you have already created your device in Blynk,
+> you can [connect your device manually using REPL](_extra/Cookbook.md)
 
 ## 3. Edit the default firmware 
 

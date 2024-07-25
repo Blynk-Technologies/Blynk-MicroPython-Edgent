@@ -1,0 +1,10 @@
+{
+  "blynk": {
+    "tmpl_id": "DYNAMIC",
+    "tmpl_name": "Device",
+    "vendor": "Blynk"
+  },
+  "wdt": {
+    "enabled": false
+  }
+}

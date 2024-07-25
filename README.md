@@ -5,12 +5,12 @@ Blynk offers custom MicroPython builds tailored for IoT applications.
 These builds provide a standard, MicroPython environment enhanced with various fixes, improvements,
 and additional features like device claiming and provisioning, OTA updates, configuration store and [many more](#features).
 
-# Getting Started
+## Getting Started
 
 - Sign up/Log in to your [Blynk Account](https://blynk.cloud)
 - Install **Blynk IoT App** for iOS or Android
 
-## 1. Install `MicroPython` build from Blynk
+## 1. Install our `MicroPython` build
 
 Generic Dev Boards:
 
@@ -27,14 +27,12 @@ Pre-configured devices:
 - `TTGO T-PCIE`: WiFi + Cellular
 - `TTGO T-Call SIM800C`: WiFi + Cellular/2G
 
-## 2. Setup your board
+## 2. Connect your device to Blynk.Cloud
 
-Use **Blynk IoT App** to add the device to your account
-
-1. Open Blynk App
+1. Open **Blynk IoT App** on your smartphone
 2. Click **Add device**
 3. Select **Find devices nearby**
-4. Select your device, follow the setup instructions
+4. Select your device and follow the setup instructions
 
 > [!NOTE]
 > If you have already created your device in Blynk,

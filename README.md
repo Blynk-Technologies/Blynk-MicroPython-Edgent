@@ -50,7 +50,7 @@ Use **Blynk IoT App** to add the device to your account.
 
 > [!NOTE]
 > If you have already created your device in Blynk,
-> you can [connect your device manually using REPL](_extra/Cookbook.md)
+> you can [connect your device manually using REPL](_extra/Cookbook.md#manual-device-connection)
 
 ## 3. Edit the default firmware 
 

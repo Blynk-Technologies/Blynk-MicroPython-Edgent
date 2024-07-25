@@ -22,12 +22,14 @@ sysconfig.commit()
 ```
 
 > [!NOTE]
-> When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function.
+> When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function. Please contact Blynk for guidance.
 
 ## Change logger settings
 
 ```py
 sysconfig["log"].update({ "color": True, "level": "debug" })
+sysconfig.commit()
+machine.reset()
 ```
 
 ## Watchdog Timer
@@ -35,6 +37,7 @@ sysconfig["log"].update({ "color": True, "level": "debug" })
 ```py
 sysconfig["wdt"]["enabled"] = False
 sysconfig.commit()
+machine.reset()
 ```
 
 ## Format internal FS

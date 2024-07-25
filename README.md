@@ -16,7 +16,9 @@ Generic Dev Boards:
 
 - `ESP32`: 4MB / 8MB / 16MB Flash (PSRAM is auto-detected)
 - `ESP32-C3`: 4MB Flash
-- `ESP32-S3`: 8MB Quad Flash, 8MB / 16MB Octa Flash (PSRAM is auto-detected)
+- `ESP32-S3` (PSRAM is auto-detected):
+  - Quad Flash: 8MB
+  - Octa Flash: 8MB / 16MB
 - `Raspberry Pi Pico W`: 2MB Flash
 - `Winner Micro W600`
 

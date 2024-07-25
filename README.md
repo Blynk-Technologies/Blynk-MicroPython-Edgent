@@ -1,7 +1,8 @@
 
 # Blynk.Edgent for MicroPython
 
-Blynk offers custom MicroPython builds tailored for IoT applications. These builds provide a standard MicroPython environment enhanced with various fixes, improvements, and additional features:
+Blynk offers custom MicroPython builds tailored for IoT applications.
+These builds provide a standard, `asyncio`-based MicroPython environment enhanced with various fixes, improvements, and additional features:
 
 - `blynk.inject` - BLE-assisted device claiming and provisioning
 - `blynk.air` - OTA updates using **Blynk.Console** and **Blynk.Apps**
@@ -43,7 +44,9 @@ Pre-configured devices:
 
 Use **Blynk IoT App** to add the device to your account.
 1. Open Blynk App
-2.
+2. Click **Add device**
+3. Select **Find devices nearby**
+4. Select your device, follow the setup instructions
 
 If you have already created your device in Blynk, you can skip the App-based provisioning and add your device by directly modifying the device configuration using REPL:
 
@@ -61,9 +64,13 @@ sysconfig["blynk"].update({
 sysconfig.commit()
 ```
 
-> [NOTE!]
+> [!NOTE]
 > When entering the production phase, you can **pre-configure** these settings and enable the **Factory Reset** function.
 
+## 3. Edit the default firmware 
+
+- Online IDE for Web and Mobile (ViperIDE)
+- Command Line Interface () 
 
 ---
 

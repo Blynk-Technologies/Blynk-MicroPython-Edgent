@@ -30,13 +30,12 @@ Pre-configured devices:
 ## 2. Connect your device to Blynk.Cloud
 
 1. Open **Blynk IoT App** on your smartphone
-2. Click **Add device**
-3. Select **Find devices nearby**
-4. Select your device and follow the setup instructions
+2. Click **Add device** -> **Find devices nearby**
+3. Select your device and follow the setup instructions
 
 > [!NOTE]
 > If you have already created your device in Blynk,
-> you can [connect your device manually using REPL](_extra/Cookbook.md#manual-device-connection)
+> you can [connect it manually using REPL](_extra/Cookbook.md#manual-device-connection)
 
 ## 3. Edit the default MicroPython app
 

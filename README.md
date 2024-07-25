@@ -56,12 +56,22 @@ Use **Blynk IoT App** to add the device to your account
 
 ## 3. Edit the default MicroPython app
 
-The [`main.py`](./main.py) is a simple `asyncio`-based sctipt that defines the high level device operation.
+The [`main.py`](./main.py) is a simple `asyncio`-based script that defines the high level device operation.
 It could be as simple as this:
 
 ```py
 from blynk import edgent
-edgent.run_asyncio_loop()
+from time import ticks_ms
+from asyncio import sleep_ms
+
+async def publisher_task():
+    while True:
+        await sleep_ms(1000)
+        edgent.updateDataStream("Uptime", ticks_ms())
+
+edgent.run_asyncio_loop([
+    publisher_task()
+])
 ```
 
 There are many ways to program your device. We'll guide you through 2 most popular options:

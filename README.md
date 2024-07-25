@@ -2,7 +2,7 @@
 # Blynk.Edgent for MicroPython
 
 Blynk offers custom MicroPython builds tailored for IoT applications.
-These builds provide a standard, `asyncio`-based MicroPython environment enhanced with various fixes, improvements, and additional features:
+These builds provide a standard, MicroPython environment enhanced with various fixes, improvements, and additional features:
 
 - `blynk.inject` - BLE-assisted device claiming and provisioning
 - `blynk.air` - OTA updates using **Blynk.Console** and **Blynk.Apps**
@@ -55,6 +55,14 @@ Use **Blynk IoT App** to add the device to your account
 > you can [connect your device manually using REPL](_extra/Cookbook.md#manual-device-connection)
 
 ## 3. Edit the default MicroPython app
+
+The [`main.py`](./main.py) is a simple `asyncio`-based sctipt that defines the high level device operation.
+It could be as simple as this:
+
+```py
+from blynk import edgent
+edgent.run_asyncio_loop()
+```
 
 There are many ways to program your device. We'll guide you through 2 most popular options:
 

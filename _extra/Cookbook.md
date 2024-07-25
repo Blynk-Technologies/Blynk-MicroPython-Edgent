@@ -34,8 +34,10 @@ machine.reset()
 
 ## Watchdog Timer
 
+Most of builds come with the watchdog disabled by default.
+
 ```py
-sysconfig["wdt"]["enabled"] = False
+sysconfig["wdt"]["enabled"] = True     # or False
 sysconfig.commit()
 machine.reset()
 ```

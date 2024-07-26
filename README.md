@@ -12,10 +12,8 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 ## 1. Install our `MicroPython` build
 
-### ESP32
-
 <details>
-  <summary>Expand</summary>
+  <summary>See ESP32, ESP32-S3, ESP32-C3 instructions</summary>
 
 1. Open [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) (you will need a Chrome-based browser)
 2. Plug your board into a USB port
@@ -30,10 +28,8 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 </details>
 
-### Raspberry Pi Pico W
-
 <details>
-  <summary>Expand</summary>
+  <summary>See Raspberry Pi Pico W instructions</summary>
 
 1. Hold down the `BOOTSEL` button while plugging the board into a USB port
 2. Copy the latest `UF2 firmware file` to the USB mass storage device that appears
@@ -47,7 +43,6 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 2. Click **Add device** -> **Find devices nearby**
 3. Select your device and follow the setup instructions
 
-> [!NOTE]
 > If you have already created your device in Blynk,
 > you can [connect it manually using REPL](_extra/Cookbook.md#manual-device-connection)
 

@@ -25,8 +25,8 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 6. Click the `Flash` button (if disabled, click the `Connect` button again)
 7. Press `Reset` button on your board to run the MicroPython firmware
 
-> [!NOTE]
-> Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
+  > [!NOTE]
+  > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 
 </details>
 
@@ -34,6 +34,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 <details>
   <summary>Expand</summary>
+
 1. Hold down the `BOOTSEL` button while plugging the board into a USB port
 2. Copy the latest `UF2 firmware file` to the USB mass storage device that appears
 3. Once programming of the new firmware is complete, the device will automatically reset and be ready for use

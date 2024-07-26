@@ -2,7 +2,7 @@
 # Read detailed explanations here:
 #   https://docs.blynk.io/bla-bla-bla
 
-from blynk import mqtt, edgent
+from blynk import edgent
 from asyncio import sleep_ms
 import logging, board
 
@@ -29,17 +29,14 @@ def led_handler(data):
 def other_handler(topic, payload):
     log.info("Got: %s, value: %s", topic, payload)
 
-""" Define our asyncio tasks """
+""" Define asyncio tasks """
 
 async def publisher_task():
     counter = 0
     while True:
         await sleep_ms(1000)
-        try:
-            mqtt.publish("ds/Counter", counter)
-            counter += 1
-        except Exception as e:
-            pass
+        edgent.updateDataStream("Counter", counter)
+        counter += 1
 
 """ Run the default asyncio loop """
 

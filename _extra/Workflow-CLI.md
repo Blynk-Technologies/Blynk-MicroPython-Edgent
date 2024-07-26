@@ -48,24 +48,3 @@ Firmware type should match the Blynk Template ID, unless:
 python3 ./tools/mpota.py app_ota.tar.gz main.py cert/ca-bundle.pem `find ./lib -name '*.py'`
 ```
 
-# Create recovery package
-
-Create `cfg/sys.json` with your product details:
-```json
-{
-  "blynk": {
-    "tmpl_id": "TMPxxxxxxxx",
-    "tmpl_name": "Device",
-    "vendor": "Blynk",
-    "server": "blynk.cloud"
-  }
-}
-```
-
-```sh
-# Create recovery package
-python3 ./tools/mpota.py recovery.tar.gz main.py cert/ca-bundle.pem cfg/sys.json
-
-# Freeze into `_recovery` module
-python3 ./tools/mkrecovery.py recovery.tar.gz > _recovery.py
-```

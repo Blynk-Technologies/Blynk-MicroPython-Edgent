@@ -15,13 +15,14 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 <details>
   <summary>See instructions for <b>ESP32, ESP32-S3, ESP32-C3</b> based devices</summary>
 
-1. Open [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) (you will need a Chrome-based browser)
-2. Plug your board into a USB port
-3. Click `Connect` in upper right corner and select your board
-4. Select Application (generic boards vs specialized builds)
-5. Select your Develop Kit variant
-6. Click the `Flash` button (if disabled, click the `Connect` button again)
-7. Press `Reset` button on your board to run the MicroPython firmware
+You can use  [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) (you will need a Chrome-based browser) to flash your device
+
+1. Plug your board into a USB port
+2. Click `Connect` in upper right corner and select your board
+3. Select **Application** (generic boards vs specialized builds)
+4. Select **Develop Kit** variant based on flash size and type
+5. Click the `Flash` button (if disabled, try clicking the `Connect` button again)
+6. Press `Reset` button on your board to run the MicroPython firmware
 
 > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 

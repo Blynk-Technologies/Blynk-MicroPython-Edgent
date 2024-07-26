@@ -19,7 +19,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 3. Click `Connect` in upper right corner and select your board
 4. Select Application (generic boards vs specialized builds)
 5. Select your Develop Kit variant
-6. Click the `Flash` button
+6. Click the `Flash` button (if disabled, click the `Connect` button again)
 
 > [!NOTE]
 > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)

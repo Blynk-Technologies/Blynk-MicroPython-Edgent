@@ -19,7 +19,8 @@ Generic Dev Boards:
 - `ESP32-S3` (PSRAM is auto-detected):
   - Quad Flash: 8MB
   - Octa Flash: 8MB / 16MB
-- `Raspberry Pi Pico W`: 2MB Flash
+- `RP2040`
+  - Raspberry Pi Pico W (2MB Flash)
 - `Winner Micro W600`
 
 Pre-configured devices:
@@ -59,7 +60,7 @@ edgent.run_asyncio_loop([
 ])
 ```
 
-There are many ways to program your device. We'll guide you through 2 most popular options:
+There are many ways to program your device. Here, we'll guide you through the two most popular options:
 
 - [ViperIDE for Web and Mobile](_extra/Workflow-ViperIDE.md)
 - [CLI using mpremote](_extra/Workflow-CLI.md)

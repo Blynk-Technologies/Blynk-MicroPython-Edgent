@@ -59,7 +59,7 @@ from asyncio import sleep_ms
 async def publisher_task():
     while True:
         await sleep_ms(1000)
-        edgent.updateDataStream("Uptime", ticks_ms())
+        edgent.publish("Uptime", ticks_ms())
 
 edgent.run_asyncio_loop([
     publisher_task()

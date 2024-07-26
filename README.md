@@ -30,10 +30,9 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 ### Raspberry Pi Pico W
 
-1. Download the latest `UF2 firmware file`
-2. Hold down the `BOOTSEL` button while plugging the board into USB
-3. The UF2 file below should then be copied to the USB mass storage device that appears
-4. Once programming of the new firmware is complete the device will automatically reset and be ready for use
+1. Hold down the `BOOTSEL` button while plugging the board into a USB port
+2. Copy the latest `UF2 firmware file` to the USB mass storage device that appears
+3. Once programming of the new firmware is complete, the device will automatically reset and be ready for use
 
 ## 2. Connect your device to Blynk.Cloud
 

@@ -12,23 +12,25 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 ## 1. Install our `MicroPython` build
 
-Generic Dev Boards:
+### ESP32
 
-- `ESP32`: 4MB / 8MB / 16MB Flash (PSRAM is auto-detected)
-- `ESP32-C3`: 4MB Flash
-- `ESP32-S3` (PSRAM is auto-detected):
+- Generic `ESP32`: 4MB / 8MB / 16MB Flash (PSRAM is auto-detected)
+- Generic `ESP32-C3`: 4MB Flash
+- Generic `ESP32-S3` (PSRAM is auto-detected):
   - Quad Flash: 8MB
   - Octa Flash: 8MB / 16MB
-- `RP2040`
-  - Raspberry Pi Pico W (2MB Flash)
-- `Winner Micro W600`
-
-Pre-configured devices:
-
 - `Seeed EdgeBox-ESP-100`: WiFi + Ethernet + Cellular
 - `TTGO T-Internet-COM`: WiFi + Ethernet + Cellular
 - `TTGO T-PCIE`: WiFi + Cellular
 - `TTGO T-Call SIM800C`: WiFi + Cellular/2G
+
+<a href="https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml">
+    <img alt="Try it with ESP Launchpad" src="https://espressif.github.io/esp-launchpad/assets/try_with_launchpad.png" width="250">
+</a>
+
+### Raspberry Pi Pico W
+
+`TODO: Instructions`
 
 ## 2. Connect your device to Blynk.Cloud
 

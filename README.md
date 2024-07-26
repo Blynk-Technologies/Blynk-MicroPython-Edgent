@@ -10,7 +10,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 - Sign up/Log in to your [Blynk Account](https://blynk.cloud)
 - Install **Blynk IoT App** for [iOS](https://apps.apple.com/us/app/blynk-iot/id1559317868) or [Android](https://play.google.com/store/apps/details?id=cloud.blynk)
 
-## 1. Install `MicroPython` + `Blynk.Edgent`
+## 1. Install MicroPython + Blynk.Edgent
 
 <details>
   <summary>See instructions for <b>ESP32, ESP32-S3, ESP32-C3</b> based devices</summary></br>
@@ -37,7 +37,7 @@ You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flash
 
 </details>
 
-## 2. Connect your device to `Blynk.Cloud`
+## 2. Connect your device to Blynk.Cloud
 
 1. Open **Blynk IoT App** on your smartphone
 2. Click **Add device** -> **Find devices nearby**

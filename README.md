@@ -13,7 +13,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 ## 1. Install MicroPython + Blynk.Edgent
 
 <details>
-  <summary>See instructions for <b>ESP32, ESP32-S3, ESP32-C3</b> based devices</summary></br>
+  <summary>See instructions for <b>ESP32</b> based devices</summary></br>
 
 You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) to flash your device. You will need a Chrome-based browser.
 

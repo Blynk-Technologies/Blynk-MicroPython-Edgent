@@ -1,9 +1,9 @@
 
 # Blynk.Edgent for MicroPython
 
-Blynk offers custom MicroPython builds tailored for IoT applications.
-These builds provide a standard, MicroPython environment enhanced with various fixes, improvements,
-and additional features like device claiming and provisioning, OTA updates, configuration store and [many more](#features).
+Blynk provides custom MicroPython builds specifically designed for IoT applications.
+These builds offer a standard MicroPython environment, enriched with numerous fixes, improvements,
+and additional features such as **device claiming and provisioning, OTA updates, configuration storage**, [and more](#features).
 
 ## Getting Started
 

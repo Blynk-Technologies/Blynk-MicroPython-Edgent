@@ -82,11 +82,8 @@ There are many ways to program your device. Here, we'll guide you through the tw
   - `coredump` - Collect crash reports remotely
   - OTA updates for MicroPython system firmware
 
----
-
-## Further reading
+# Further reading
 
 - [Cookbook](_extra/Cookbook.md)
 - [`asyncio` documentation](https://docs.micropython.org/en/latest/library/asyncio.html)
 - [`asyncio` tutorial](https://github.com/peterhinch/micropython-async/blob/master/v3/docs/TUTORIAL.md)
-

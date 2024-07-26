@@ -23,8 +23,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 6. Click the `Flash` button (if disabled, click the `Connect` button again)
 7. Press `Reset` button on your board to run the MicroPython firmware
 
-  > [!NOTE]
-  > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
+> Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 
 </details>
 
@@ -43,6 +42,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 2. Click **Add device** -> **Find devices nearby**
 3. Select your device and follow the setup instructions
 
+> [!NOTE]
 > If you have already created your device in Blynk,
 > you can [connect it manually using REPL](_extra/Cookbook.md#manual-device-connection)
 

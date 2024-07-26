@@ -14,6 +14,15 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 ### ESP32
 
+1. Open [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) (you will need a Chrome-based browser)
+2. Plug your board into a USB port
+3. Click `Connect` in upper right corner and select your board
+4. Select Application (generic boards vs specialized builds)
+5. Select your Develop Kit variant
+6. Click the `Flash` button
+
+The builds listed in the ESP launchpad will include:
+
 - Generic `ESP32`: 4MB / 8MB / 16MB Flash (PSRAM is auto-detected)
 - Generic `ESP32-C3`: 4MB Flash
 - Generic `ESP32-S3` (PSRAM is auto-detected):
@@ -23,10 +32,6 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 - `TTGO T-Internet-COM`: WiFi + Ethernet + Cellular
 - `TTGO T-PCIE`: WiFi + Cellular
 - `TTGO T-Call SIM800C`: WiFi + Cellular/2G
-
-<a href="https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml">
-    <img alt="Try it with ESP Launchpad" src="https://espressif.github.io/esp-launchpad/assets/try_with_launchpad.png" width="250">
-</a>
 
 ### Raspberry Pi Pico W
 

@@ -21,17 +21,8 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 5. Select your Develop Kit variant
 6. Click the `Flash` button
 
-The builds listed in the ESP launchpad will include:
-
-- Generic `ESP32`: 4MB / 8MB / 16MB Flash (PSRAM is auto-detected)
-- Generic `ESP32-C3`: 4MB Flash
-- Generic `ESP32-S3` (PSRAM is auto-detected):
-  - Quad Flash: 8MB
-  - Octa Flash: 8MB / 16MB
-- `Seeed EdgeBox-ESP-100`: WiFi + Ethernet + Cellular
-- `TTGO T-Internet-COM`: WiFi + Ethernet + Cellular
-- `TTGO T-PCIE`: WiFi + Cellular
-- `TTGO T-Call SIM800C`: WiFi + Cellular/2G
+> [!NOTE]
+> Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 
 ### Raspberry Pi Pico W
 

@@ -14,7 +14,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 
 <details>
   <summary>See instructions for <b>ESP32, ESP32-S3, ESP32-C3</b> based devices</summary>
-
+  
 You can use  [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://vsh.pp.ua/Blynk-MicroPython-Edgent/esp-quickstart.toml) (you will need a Chrome-based browser) to flash your device
 
 1. Plug your board into a USB port
@@ -30,7 +30,7 @@ You can use  [ESP Launchpad](https://espressif.github.io/esp-launchpad/?flashCon
 
 <details>
   <summary>See instructions for <b>Raspberry Pi Pico W</b></summary>
-
+  
 1. Hold down the `BOOTSEL` button while plugging the board into a USB port
 2. Copy the latest `UF2 firmware file` to the USB mass storage device that appears
 3. Once programming of the new firmware is complete, the device will automatically reset and be ready for use

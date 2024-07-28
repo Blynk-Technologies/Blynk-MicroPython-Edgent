@@ -13,7 +13,6 @@ import re
 import json
 import tarfile
 import datetime
-import blynk_tag
 import shutil
 from subprocess import Popen, PIPE, DEVNULL
 
@@ -54,6 +53,9 @@ def minify(source, filename):
         preserve_shebang=False,
     )
 
+def create_tag(taginfo):
+    taginfo = map(lambda x: x.encode("utf-8"), taginfo)
+    return b"\0".join(taginfo) + b"\0\0"
 
 def create_tagged_tar(input_files, output_tar_file):
 
@@ -78,7 +80,7 @@ def create_tagged_tar(input_files, output_tar_file):
     taginfo.extend(["mcu", fw_ver])
     taginfo.extend(["fw-type", fw_type])
     taginfo.extend(["build", now.strftime("%b %d %Y %H:%M:%S")])
-    tag = blynk_tag.create_tag(taginfo)
+    tag = create_tag(taginfo)
 
     # Create a tar.gz file
     with tarfile.open(output_tar_file, "w:gz", format=tarfile.GNU_FORMAT) as tar:

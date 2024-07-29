@@ -49,7 +49,28 @@ del sysconfig["nets"][2]
 sysconfig.commit()
 ```
 
-## Watchdog Timer
+## Add diagnostics
+
+```py
+import netmgr
+import micropython
+import gc
+
+async def diagnostics_task():
+    while True:
+        mem_prev = gc.mem_free()
+        gc.collect()
+        mem_free = gc.mem_free()
+        gc.threshold(mem_free // 4 + gc.mem_alloc())
+        edgent.publish("ds/Heap Free", mem_free / 1024)
+        edgent.publish("ds/GC Collect", (mem_free - mem_prev) / 1024)
+        edgent.publish("ds/WiFi RSSI", netmgr.sta.status("rssi"))
+        await asyncio.sleep(60)
+```
+
+Also, add `diagnostics_task()` to `edgent.run_asyncio_loop`.
+
+## Watchdog Timer (WDT)
 
 The watchdog is typically disabled by default, as it can complicate prototyping.
 It is recommended to enable it at later stages of development:
@@ -57,7 +78,7 @@ It is recommended to enable it at later stages of development:
 ```py
 sysconfig["wdt"]["enabled"] = True
 sysconfig.commit()
-machine.reset()      # Chnaging this setting requires a hard reset
+machine.reset()      # Changing this setting requires a hard reset
 ```
 
 ## Format internal FS
@@ -65,20 +86,13 @@ machine.reset()      # Chnaging this setting requires a hard reset
 > [!WARNING]
 > This performs a factory reset, the internal file system will recover to it's initial state
 
-Use one of these commands depending on your actual hardware:
 ```py
-# ESP32
-import os, flashbdev; os.VfsLfs2.mkfs(flashbdev.bdev)
-
-# RP2040
-import vfs, rp2; vfs.VfsLfs2.mkfs(rp2.Flash(), progsize=256)
-
-# WM W600
-import vfs, w600; vfs.VfsLfs2.mkfs(w600.Flash(), progsize=256)
+edgent.factory_reset()
 ```
 
 ## Update MicroPython firmware directly from GitHub (ESP32 only)
 
 ```py
-blynk.air.start_ota_update("https://micropython.org/resources/firmware/ESP32_GENERIC-SPIRAM-20240222-v1.22.2.app-bin", validate=False)
+from blynk import air
+air.start_ota_update("https://micropython.org/resources/firmware/ESP32_GENERIC-SPIRAM-20240222-v1.22.2.app-bin", validate=False)
 ```

@@ -1,8 +1,9 @@
 {
   "blynk": {
-    "tmpl_id": "DYNAMIC",
+    "tmpl_id":   "DYNAMIC",
     "tmpl_name": "Device",
-    "vendor": "Blynk"
+    "auth":      null,
+    "server":    "blynk.cloud"
   },
   "wdt": {
     "enabled": false

@@ -1,33 +1,33 @@
-# This example bla bla bla
-# Read detailed explanations here:
-#   https://docs.blynk.io/bla-bla-bla
+# SPDX-FileCopyrightText: 2024 Volodymyr Shymanskyy for Blynk Technologies Inc.
+# SPDX-License-Identifier: Apache-2.0
+#
+# This example ... TODO
+# Read more: https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent
+#
+# The software is provided "as is", without any warranties or guarantees (explicit or implied).
+# This includes no assurances about being fit for any specific purpose.
 
 from blynk import edgent
 from asyncio import sleep_ms
-import logging, board
+import logging
+import board
 
 log = logging.getLogger("app")
 
 """ Register event handlers """
 
-@edgent.on(edgent.CONNECTED)
-def connected_handler():
-    log.info("MQTT connected")
+def connection_handler():
+    log.info("Blynk connected")
 
-@edgent.on(edgent.DISCONNECTED)
-def disconnected_handler():
-    log.info("MQTT disconnected")
+def disconnection_handler():
+    log.info("Blynk disconnected")
 
-@edgent.on_message("ds/LED")
-def led_handler(data):
-    if hasattr(board, "LED"):
-        board.LED.write(int(data))
-    else:
-        log.info("Your LED is %s", data)
-
-@edgent.on_message()  # Handle all other messages
-def other_handler(topic, payload):
+def data_callback(topic, payload):
     log.info("Got: %s, value: %s", topic, payload)
+
+edgent.on_connected = connected
+edgent.on_disconnected = disconnected
+edgent.on_message = data_callback
 
 """ Define asyncio tasks """
 
@@ -35,7 +35,7 @@ async def publisher_task():
     counter = 0
     while True:
         await sleep_ms(1000)
-        edgent.updateDataStream("Counter", counter)
+        edgent.publish("Counter", counter)
         counter += 1
 
 """ Run the default asyncio loop """

@@ -10,6 +10,6 @@
   },
   "log": {
     "color": true,
-    "level": "debug"
+    "level": "info"
   }
 }

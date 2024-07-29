@@ -13,12 +13,16 @@ sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassw
 sysconfig["blynk"].update({
     "tmpl_id":   "TMPxxxxxxxxxx",
     "tmpl_name": "Device",
-    "auth":      "rn60Wx*******",
+    "auth":      "rn60Wxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "server":    "blynk.cloud",
 })
 
 # Save system configuration
 sysconfig.commit()
+
+# Restart
+import machine
+machine.soft_reset()
 ```
 
 > [!NOTE]

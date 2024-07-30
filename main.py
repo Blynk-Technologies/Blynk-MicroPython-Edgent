@@ -9,10 +9,8 @@
 
 from blynk import edgent
 from asyncio import sleep_ms
-import logging
-import board
 
-log = logging.getLogger("app")
+log = edgent.logging.getLogger("app")
 
 """ Register event handlers """
 
@@ -22,12 +20,12 @@ def connection_handler():
 def disconnection_handler():
     log.info("Blynk disconnected")
 
-def data_callback(topic, payload):
+def data_handler(topic, payload):
     log.info("Got: %s, value: %s", topic, payload)
 
-edgent.on_connected = connected
-edgent.on_disconnected = disconnected
-edgent.on_message = data_callback
+edgent.on_connected = connection_handler
+edgent.on_disconnected = disconnection_handler
+edgent.on_message = data_handler
 
 """ Define asyncio tasks """
 

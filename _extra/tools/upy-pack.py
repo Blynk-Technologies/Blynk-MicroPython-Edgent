@@ -145,13 +145,13 @@ def main(input_args=None):
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Blynk MPOTA Utility",
+        description="Blynk uPy Pack Utility",
         formatter_class=argparse.RawTextHelpFormatter,
         epilog="""\
 Create App OTA package:
-  mpota.py -o app_ota.tar.gz main.py cert/ca-bundle.pem
+  upy-pack.py -o app_ota.tar.gz main.py cert/ca-bundle.pem
 Create a Factory/Recovery module (can output .py .mpy or .tar.gz):
-  mpota.py --factory -o _factory.py main.py cert/ca-bundle.pem cfg/sys.json
+  upy-pack.py --factory -o _fs_img.py main.py cert/ca-bundle.pem cfg/sys.json
 """)
 
     parser.add_argument("files",            nargs="+",           help="Input files")

@@ -22,7 +22,7 @@ sysconfig.commit()
 
 # Restart
 import machine
-machine.soft_reset()
+machine.reset()
 ```
 
 > [!NOTE]

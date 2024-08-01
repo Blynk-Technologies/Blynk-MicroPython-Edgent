@@ -45,6 +45,6 @@ Firmware type should match the Blynk Template ID, unless:
 - You have multiple products that use a single firmware
 
 ```sh
-python3 _extra/tools/mpota.py -o app_ota.tar.gz main.py cert/ca-bundle.pem `find ./lib -name '*.py'`
+python3 _extra/tools/upy-pack.py -o app_ota.tar.gz main.py cert/ca-bundle.pem `find ./lib -name '*.py'`
 ```
 

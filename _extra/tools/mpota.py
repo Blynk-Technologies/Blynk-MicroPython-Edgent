@@ -134,7 +134,7 @@ def create_tagged_tar(args):
                 ti.mtime = now.timestamp()
                 tar.addfile(tarinfo=ti, fileobj=io.BytesIO(data))
 
-                print(f"{fn:30} [{len(data)}]")
+                print(f"{fn:48} {len(data)}")
             except Exception as e:
                 print(f"ERROR: cannot process {fn}: ", e)
                 sys.exit(1)
@@ -161,16 +161,21 @@ Create a Factory/Recovery module (can output .py .mpy or .tar.gz):
     parser.add_argument("--compile", "-c",  action="store_true", help="Compile the files")
     parser.add_argument("-march",           type=str,            help="Specify the architecture for compilation")
 
+    def report_result(size, msg="Package size"):
+        print("=== %s: %d bytes ===" % (msg, size))
+
     args = parser.parse_args(input_args)
     if args.factory:
         data = create_tagged_tar(args)
         if args.output.endswith(".tar.gz"):
             pass
         elif args.output.endswith(".py"):
+            report_result(len(data) + 66, msg="Approx. compiled package size")
             data = bytes2py(data).encode()
         elif args.output.endswith(".mpy"):
             data = bytes2py(data).encode()
             data = mpy_cross(data, ["-O3", "-s", "raw"])
+            report_result(len(data))
         else:
             raise RuntimeError(f"Output format not supported: {args.output}")
 
@@ -183,6 +188,7 @@ Create a Factory/Recovery module (can output .py .mpy or .tar.gz):
         data = create_tagged_tar(args)
         with open(args.output, "wb") as f:
             f.write(data)
+        report_result(len(data))
 
 if __name__ == "__main__":
     main()

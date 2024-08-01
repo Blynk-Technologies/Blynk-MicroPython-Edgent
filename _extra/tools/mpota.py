@@ -150,7 +150,7 @@ def main(input_args=None):
         epilog="""\
 Create App OTA package:
   mpota.py -o app_ota.tar.gz main.py cert/ca-bundle.pem
-Create a Factory/Recovery module:
+Create a Factory/Recovery module (can output .py .mpy or .tar.gz):
   mpota.py --factory -o _factory.py main.py cert/ca-bundle.pem cfg/sys.json
 """)
 

@@ -18,11 +18,12 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/latest/esp-quickstart.toml) to flash your device. You will need a Chrome-based browser.
 
 1. Plug your board into a USB port
-2. Click `Connect` in upper right corner and select your board
-3. Select **Application** (generic boards vs specialized builds)
-4. Select **Develop Kit** variant based on flash size and type
-5. Click the `Flash` button (if disabled, try clicking the `Connect` button again)
-6. Press `Reset` button on your board to run the MicroPython firmware
+2. Click <kbd>Connect</kbd> in upper right corner and select your board
+   - Recommended: click <kbd>Erase Flash</kbd> on the **DIY** tab
+4. Select **Application** (generic boards vs specialized builds)
+5. Select **Develop Kit** variant based on flash size and type
+6. Click the <kbd>Flash</kbd> button (if disabled, try clicking the `Connect` button again)
+7. Press <kbd>Reset</kbd> button on your board to run the MicroPython firmware
 
 > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 
@@ -81,6 +82,8 @@ There are many ways to program your device. Here, we'll guide you through the tw
 - `netmgr` - Network management for `WiFi`, `Ethernet` and `Cellular`
 - `config` - System-wide configuration
 - `aiontp` - A versatile asyncio-based version of NTP client
+- `aioinput` - An asyncio variant of `input` function
+- `aioprof` - Asyncio [profiling tool](https://gitlab.com/alelec/aioprof)
 - `logging` - System-wide, preconfigured logging
 - `board` - A unified way to access the board peripherals
 - Factory reset function

@@ -24,6 +24,8 @@ You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flash
 5. Click the `Flash` button (if disabled, try clicking the `Connect` button again)
 6. Press `Reset` button on your board to run the MicroPython firmware
 
+> use [this tool](https://espressif.github.io/esptool-js/) to perform full clean if needed
+
 > Alternatively, you can [flash your ESP32 device manually](https://github.com/Blynk-Technologies/Blynk-MicroPython-Edgent/releases/latest)
 
 </details>

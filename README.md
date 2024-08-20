@@ -32,8 +32,8 @@ You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flash
 <details>
   <summary>See instructions for <b>Raspberry Pi Pico W</b></summary></br>
 
-1. Hold down the `BOOTSEL` button while plugging the board into a USB port
-2. Copy the latest [`UF2 firmware file`](https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/latest/RPI_PICO_W.uf2) to the USB mass storage device that appears
+1. Hold down the <kbd>BOOTSEL</kbd> button while plugging the board into a USB port
+2. Copy the latest [UF2 firmware file](https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/latest/RPI_PICO_W.uf2) to the USB mass storage device that appears
 3. Once programming of the new firmware is complete, the device will automatically reset and be ready for use
 
 </details>

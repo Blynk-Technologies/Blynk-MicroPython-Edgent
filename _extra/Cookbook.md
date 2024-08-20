@@ -49,6 +49,9 @@ sysconfig["nets"].append({ "type": "wlan", "ssid": "YourSSID", "psk": "YourPassw
 # Remove network by index (0-based)
 del sysconfig["nets"][2]
 
+# Remove all networks
+sysconfig['nets'].clear()
+
 # Save system configuration
 sysconfig.commit()
 ```
@@ -91,6 +94,7 @@ machine.reset()      # Changing this setting requires a hard reset
 > This performs a factory reset, the internal file system will recover to it's initial state
 
 ```py
+from blynk import edgent
 edgent.factory_reset()
 ```
 

@@ -48,3 +48,9 @@ Firmware type should match the Blynk Template ID, unless:
 python3 _extra/tools/upy-pack.py -o app_ota.tar.gz main.py cert/ca-bundle.pem `find ./lib -name '*.py'`
 ```
 
+---
+
+# Further reading
+
+- [Cookbook](Cookbook.md)
+

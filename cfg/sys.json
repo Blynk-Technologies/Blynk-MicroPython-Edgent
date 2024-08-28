@@ -1,0 +1,15 @@
+{
+  "blynk": {
+    "tmpl_id":   "DYNAMIC",
+    "tmpl_name": "Device",
+    "auth":      null,
+    "server":    "blynk.cloud"
+  },
+  "wdt": {
+    "enabled": false
+  },
+  "log": {
+    "color": true,
+    "level": "info"
+  }
+}

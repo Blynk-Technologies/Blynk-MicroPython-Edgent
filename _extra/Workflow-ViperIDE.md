@@ -1,7 +1,7 @@
 ## Using `ViperIDE`
 
 Make sure your board is connected via USB. It should **not** be opened by any serial monitor or other tool.  
-Open [ViperIDE](https://viper-ide.org) (you'll need a Chrome-based vrowser).
+Open [ViperIDE](https://viper-ide.org) (you'll need a Chrome-based browser).
 
 [<img src="https://github.com/vshymanskyy/ViperIDE/blob/main/docs/images/visual-main.png?raw=1" alt="image" style="width:50%;"/>](https://viper-ide.org)
 
@@ -17,5 +17,6 @@ Open [ViperIDE](https://viper-ide.org) (you'll need a Chrome-based vrowser).
 
 # Further reading
 
-- [Cookbook](Cookbook.md)
+- [ViperIDE tips and tricks](https://github.com/vshymanskyy/ViperIDE/tree/main/docs)
+- [Blynk.Edgent Cookbook](Cookbook.md)
 

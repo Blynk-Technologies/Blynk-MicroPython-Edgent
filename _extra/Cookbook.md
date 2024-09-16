@@ -109,8 +109,8 @@ edgent.factory_reset()
 
 ```py
 from blynk import air
-
-air.start_ota_update("https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/v0.3.0/GENERIC_ESP32_4MB.ota.bin", validate=False)
+base_url = "https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython"
+air.start_ota_update(base_url + "/v0.3.0/GENERIC_ESP32_4MB.ota.bin", validate=False)
 ```
 
 If your `asyncio` loop is not running (i.e. you're using the USB REPL), you need to run it:

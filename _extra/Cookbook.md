@@ -56,6 +56,13 @@ sysconfig['nets'].clear()
 sysconfig.commit()
 ```
 
+## Add your connectivity options
+
+If your board has additional connectivity options like `Etheret` or `Cellular`, you can add them to `board.py`.
+Please [see examples](./boards).  
+You can override the built-in `board` module by placing your variant in `lib/board.py`.  
+After rebooting the device, the `netmgr` should be able to detect the new board definitions.
+
 ## Add diagnostics
 
 ```py
@@ -98,11 +105,17 @@ from blynk import edgent
 edgent.factory_reset()
 ```
 
-<!--
-## Update MicroPython firmware directly from GitHub (ESP32 only)
+## Update MicroPython firmware directly from build URL (ESP32 only)
 
 ```py
 from blynk import air
-air.start_ota_update("https://micropython.org/resources/firmware/ESP32_GENERIC-SPIRAM-20240222-v1.22.2.app-bin", validate=False)
+
+air.start_ota_update("https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/v0.3.0/GENERIC_ESP32_4MB.ota.bin", validate=False)
 ```
--->
+
+If your `asyncio` loop is not running (i.e. you're using the USB REPL), you need to run it:
+
+```py
+import asyncio
+asyncio.run_until_complete()
+```

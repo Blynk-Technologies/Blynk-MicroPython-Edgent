@@ -98,9 +98,11 @@ from blynk import edgent
 edgent.factory_reset()
 ```
 
+<!--
 ## Update MicroPython firmware directly from GitHub (ESP32 only)
 
 ```py
 from blynk import air
 air.start_ota_update("https://micropython.org/resources/firmware/ESP32_GENERIC-SPIRAM-20240222-v1.22.2.app-bin", validate=False)
 ```
+-->

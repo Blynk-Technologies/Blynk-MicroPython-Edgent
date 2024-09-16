@@ -40,6 +40,11 @@ You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flash
 
 ## 2. Connect your device to Blynk.Cloud
 
+> [!WARNING]
+> The automatic connection using Blynk Apps is currently in development.  
+> For now please [connect your device manually using REPL](_extra/Cookbook.md#manual-device-connection)
+
+<!--
 1. Open **Blynk IoT App** on your smartphone
 2. Click **Add device** -> **Find devices nearby**
 3. Select your device and follow the setup instructions
@@ -47,6 +52,7 @@ You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flash
 > [!NOTE]
 > If you have already created your device in Blynk,
 > you can [connect it manually using REPL](_extra/Cookbook.md#manual-device-connection)
+-->
 
 ## 3. Edit the default MicroPython app
 

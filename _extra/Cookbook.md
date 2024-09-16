@@ -69,9 +69,9 @@ async def diagnostics_task():
         gc.collect()
         mem_free = gc.mem_free()
         gc.threshold(mem_free // 4 + gc.mem_alloc())
-        edgent.publish("ds/Heap Free", mem_free / 1024)
-        edgent.publish("ds/GC Collect", (mem_free - mem_prev) / 1024)
-        edgent.publish("ds/WiFi RSSI", netmgr.sta.status("rssi"))
+        edgent.publish("Heap Free", mem_free / 1024)
+        edgent.publish("GC Collect", (mem_free - mem_prev) / 1024)
+        edgent.publish("WiFi RSSI", netmgr.sta.status("rssi"))
         await asyncio.sleep(60)
 ```
 

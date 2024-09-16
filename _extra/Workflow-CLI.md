@@ -21,7 +21,7 @@ Then, open MicroPython REPL:
 mpremote repl
 ```
 
-Press `Ctrl+D` to restart your app.
+Press <kbd>Ctrl+D</kbd> to restart your app.
 
 The device should get connected in a few seconds:
 

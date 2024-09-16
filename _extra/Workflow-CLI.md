@@ -52,5 +52,5 @@ python3 _extra/tools/upy-pack.py -o app_ota.tar.gz main.py cert/ca-bundle.pem `f
 
 # Further reading
 
-- [Cookbook](Cookbook.md)
-
+- [`mpremote` reference](https://docs.micropython.org/en/latest/reference/mpremote.html)
+- [Blynk.Edgent cookbook](Cookbook.md)

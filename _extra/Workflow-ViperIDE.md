@@ -18,5 +18,4 @@ Open [ViperIDE](https://viper-ide.org) (you'll need a Chrome-based browser).
 # Further reading
 
 - [ViperIDE tips and tricks](https://github.com/vshymanskyy/ViperIDE/tree/main/docs)
-- [Blynk.Edgent Cookbook](Cookbook.md)
-
+- [Blynk.Edgent cookbook](Cookbook.md)

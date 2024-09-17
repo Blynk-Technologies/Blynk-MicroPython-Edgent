@@ -3,7 +3,9 @@
 
 Blynk provides custom MicroPython builds specifically designed for IoT applications.
 These builds offer a standard MicroPython environment, enriched with numerous fixes, improvements,
-and additional features such as **secure Blynk.Cloud connection, device claiming and provisioning, OTA updates, configuration storage**, [and more](#features).
+and additional features such as **Smartphone Apps, Web Dashboards, secure Blynk.Cloud connection, device claiming and provisioning, OTA updates, configuration storage**, [and more](#features).
+
+![image](https://github.com/blynkkk/blynkkk.github.io/raw/master/images/GithubBanner.jpg?raw=1)
 
 ## Getting Started
 

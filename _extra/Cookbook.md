@@ -84,6 +84,16 @@ async def diagnostics_task():
 
 Also, add `diagnostics_task()` to `edgent.run_asyncio_loop`.
 
+## OTA update of MicroPython system directly from URL (ESP32 only)
+
+```py
+import asyncio
+from blynk import air
+base_url = "https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython"
+ota = air.start_ota_update(base_url + "/v0.3.0/GENERIC_ESP32_4MB.ota.bin", validate=False)
+asyncio.run(ota)  # if your asyncio loop is running: await ota
+```
+
 ## Watchdog Timer (WDT)
 
 The watchdog is typically disabled by default, as it can complicate prototyping.
@@ -103,19 +113,4 @@ machine.reset()      # Changing this setting requires a hard reset
 ```py
 from blynk import edgent
 edgent.factory_reset()
-```
-
-## Update MicroPython firmware directly from build URL (ESP32 only)
-
-```py
-from blynk import air
-base_url = "https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython"
-air.start_ota_update(base_url + "/v0.3.0/GENERIC_ESP32_4MB.ota.bin", validate=False)
-```
-
-If your `asyncio` loop is not running (i.e. you're using the USB REPL), you need to run it:
-
-```py
-import asyncio
-asyncio.run_until_complete()
 ```

@@ -15,7 +15,7 @@ and additional features such as **secure Blynk.Cloud connection, device claiming
 <details>
   <summary>See instructions for <b>ESP32</b> based devices</summary></br>
 
-You can use [**ESP Launchpad**](https://espressif.github.io/esp-launchpad/?flashConfigURL=https://blynk-fw-builds.fra1.cdn.digitaloceanspaces.com/Blynk-Edgent-MicroPython/latest/esp-quickstart.toml) to flash your device. You will need a Chrome-based browser.
+You can use [**ESP Launchpad**](https://bit.ly/flasher-mpy-edgent-esp32) to flash your device. You will need a Chrome-based browser.
 
 1. Plug your board into a USB port
 2. Click <kbd>Connect</kbd> in upper right corner and select your board

@@ -4,7 +4,7 @@ from pcf8563 import PCF8563
 from ads1x15 import ADS1115
 import sys, network, time
 
-board_id = "Seeed EdgeBox-ESP-100"
+board_id = "Seeed EdgeBox-ESP100"
 
 # Digital Outputs
 DO0 = Pin(40, Pin.OUT)

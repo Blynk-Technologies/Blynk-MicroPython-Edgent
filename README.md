@@ -87,9 +87,14 @@ There are many ways to program your device. Here, we'll guide you through the tw
 - `blynk.air` - OTA updates using **Blynk.Console** and **Blynk.Apps**
 - `blynk.time` - Time Zone handling (including DST transitions), Sunrise/Sunset calculation
 - `blynk.repl` - Remote MicroPyhton REPL for Blynk Terminal
-- `netmgr` - Network management for `WiFi`, `Ethernet` and `Cellular`
-- `config` - System-wide configuration
-- `aiontp` - A versatile asyncio-based version of NTP client
+- `netmgr` - Automatic network management
+  - `WiFi`: Maintains connection to the most reliable WiFi network (up to 16 configured networks)
+  - `Ethernet`: Supports `Static IP` or `DHCP` network configuration
+  - `Cellular`: Provides connectivity through `2G GSM`, `EDGE`, `3G`, `4G LTE`, `Cat M1`, or `5G` networks using `PPP`
+- `config` - System-wide configuration registry
+- `aiontp` - A versatile asyncio-based `NTP` client
+- `aiohttp` - Asyncio-based `HTTP v1.1` client with session `keep-alive` support
+- `aiomqtt` - Asyncio-based `MQTT v3.1.1` client
 - `aioinput` - An asyncio variant of `input` function
 - `aioprof` - Asyncio [profiling tool](https://gitlab.com/alelec/aioprof)
 - `logging` - System-wide, preconfigured logging

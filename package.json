@@ -1,0 +1,16 @@
+{
+  "name": "Blynk.Edgent",
+  "version": "0.3.0",
+  "description": "Framework for creating IoT products",
+  "author": "Blynk Technologies Inc.",
+  "license": "Apache-2.0",
+  "readme": "github:Blynk-Technologies/Blynk-MicroPython-Edgent/README.md",
+  "keywords": "iot,mqtt,wifi,ethernet,cellular,3g,4g,lte",
+  "urls": [
+    ["./main.py", "main.py"],
+    ["./cert/ca-bundle.pem", "cert/ca-bundle.pem"],
+    ["./cfg/sys.json", "cfg/sys.json"],
+    ["./cfg/fw.json",  "cfg/fw.json"]
+  ],
+  "deps": []
+}
